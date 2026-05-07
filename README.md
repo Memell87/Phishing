@@ -1,5 +1,7 @@
 # Phishing
 Phishing com Kali Linux
+
+<img width="1200" height="938" alt="Phishing py" src="https://github.com/user-attachments/assets/679c5e12-83a8-433f-afe0-39ef73c5083a" />
 Neste desafio, simulei um ataque de Phishing utilizando a ferramenta Social-Engineer Toolkit (SET) dentro do ecossistema Kali Linux. O objetivo principal foi entender na prática como ataques de engenharia social funcionam para aprender a mitigar essas vulnerabilidades em aplicações reais.
 
 🛠 Ferramentas Utilizadas
@@ -38,7 +40,7 @@ Defini o IP da máquina local e o caminho da pasta onde salvei o index.html.
 4. Execução e Captura
 Acessei o IP local através de um navegador simulando a vítima.
 
-Inseri credenciais de teste (ex: teste@email.com e senha123).
+Inseri credenciais de teste (ex: testeteste@gmail.com e senha123).
 
 O terminal do SET exibiu com sucesso os dados capturados em texto claro, sem erros de decodificação.
 
