@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de ADS - Novidades</title>
+    <script>
+        // Simulação manual de Tabnabbing
+        window.onblur = function() {
+            setTimeout(function() {
+                document.title = "Sessão Expirada - Login";
+                document.body.innerHTML = `
+                    <div style="font-family: Arial; text-align: center; margin-top: 100px;">
+                        <div style="display: inline-block; border: 1px solid #ccc; padding: 20px; border-radius: 5px;">
+                            <h2>Sua sessão expirou</h2>
+                            <p>Por favor, autentique-se novamente:</p>
+                            <form action="/" method="POST">
+                                <input type="text" name="email" placeholder="E-mail" style="margin-bottom: 10px;"><br>
+                                <input type="password" name="password" placeholder="Senha"><br><br>
+                                <input type="submit" value="Entrar" style="width: 100%;">
+                            </form>
+                        </div>
+                    </div>
+                `;
+            }, 3000); // Troca após 3 segundos fora da aba
+        };
+    </script>
+</head>
+<body style="font-family: Arial; text-align: center; padding-top: 50px;">
+    <h1>Bem-vindo ao Portal de ADS</h1>
+    <p>Conteúdo exclusivo para desenvolvedores Front-end.</p>
+    <p><strong>(Abra outra aba e aguarde alguns segundos...)</strong></p>
+</body>
+</html>
